@@ -6,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Página contato do sistema</h1>
-
-    <h1><?= $conteudo['Titulo'] ?></h1>
-    <p><?= $conteudo['Texto'] ?></p>
+    <?= $this->extend('layout/main') ?>
+    <?= $this->section('conteudo') ?>
+    
+        <h1><?= $conteudo['Titulo']; ?></h1>
+        <p><?= $conteudo['Texto']; ?></p>
+    <?= $this->endSection() ?>
 </body>
 </html>

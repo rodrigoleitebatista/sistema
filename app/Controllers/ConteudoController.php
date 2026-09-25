@@ -9,6 +9,7 @@ use App\Models\ConteudoModel;
 
 class ConteudoController extends BaseController
 {
+ 
     public function index()
     {
         //
@@ -18,6 +19,8 @@ class ConteudoController extends BaseController
 
         return view('home', $dados);
     }
+
+    protected $helpers = ['contato'];
 
     public function contato()
     {
